@@ -1,36 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UK VAT Calculator — Add or Remove VAT Instantly | Tabutility</title>
-    <meta name="description" content="Free UK VAT calculator. Add or remove VAT at 20%, 5%, or 0% instantly. See net, VAT amount, and gross price. Includes quick reference for which goods qualify for each rate. No sign-up." />
-    <meta name="keywords" content="vat calculator, uk vat calculator, add vat calculator, remove vat calculator, vat reverse calculator, 20% vat calculator, vat inclusive calculator, vat exclusive calculator" />
-    <link rel="canonical" href="https://vat-calculator.tabutility.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://vat-calculator.tabutility.com/" />
-    <meta property="og:title" content="UK VAT Calculator — Add or Remove VAT Instantly" />
-    <meta property="og:description" content="Add or remove UK VAT at 20%, 5%, or 0% instantly. Free, no sign-up." />
-    <meta property="og:site_name" content="Tabutility" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="UK VAT Calculator — Add or Remove VAT Instantly" />
-    <meta name="twitter:description" content="Add or remove UK VAT at 20%, 5%, or 0% instantly. Free, no sign-up." />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇬🇧</text></svg>" />
-    <meta name="robots" content="index, follow" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-78VZWJ5B1W');
-    </script>
-    <script type="application/ld+json">
-    { "@context": "https://schema.org", "@type": "WebApplication", "name": "UK VAT Calculator", "url": "https://vat-calculator.tabutility.com", "description": "Free UK VAT calculator. Add or remove VAT at 20%, 5%, or 0% instantly.", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" }, "provider": { "@type": "Organization", "name": "Tabutility", "url": "https://tabutility.com" } }
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>VAT Calculator — Tabutility</title>
+<meta name="description" content="Free VAT calculator. Add or remove VAT from any amount. Supports UK (20%), EU and custom VAT rates."/>
+<meta name="keywords" content="vat calculator, add vat, remove vat, vat inclusive, vat exclusive, uk vat calculator"/>
+<link rel="canonical" href="https://vat-calculator.tabutility.com/"/>
+<link rel="alternate" hreflang="en-GB" href="https://vat-calculator.tabutility.com/"/>
+<link rel="alternate" hreflang="x-default" href="https://vat-calculator.tabutility.com/"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💷</text></svg>"/>
+<meta property="og:title" content="VAT Calculator"/>
+<meta property="og:description" content="Free VAT calculator. Add or remove VAT. Supports UK 20%, EU and custom rates."/>
+<meta property="og:url" content="https://vat-calculator.tabutility.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Tabutility"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="VAT Calculator"/>
+<meta name="twitter:description" content="Free VAT calculator. Add or remove VAT. Supports UK 20%, EU and custom rates."/>
+<meta name="robots" content="index, follow"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-78VZWJ5B1W');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"VAT Calculator","url":"https://vat-calculator.tabutility.com/","description":"Free VAT calculator. Add or remove VAT from any amount. Supports UK (20%), EU and custom VAT rates.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Tabutility","url":"https://tabutility.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tabutility","item":"https://tabutility.com"},{"@type":"ListItem","position":2,"name":"International","item":"https://tabutility.com"},{"@type":"ListItem","position":3,"name":"VAT Calculator","item":"https://vat-calculator.tabutility.com/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the UK VAT rate?","acceptedAnswer":{"@type":"Answer","text":"The standard UK VAT rate is 20%. Reduced rate is 5% and zero rate is 0%."}},{"@type":"Question","name":"How do I remove VAT?","acceptedAnswer":{"@type":"Answer","text":"Divide the VAT-inclusive amount by 1.2 (for 20% VAT) to get the net amount."}},{"@type":"Question","name":"Is the VAT Calculator free?","acceptedAnswer":{"@type":"Answer","text":"Yes — completely free, no sign-up needed."}},{"@type":"Question","name":"Can I use the VAT Calculator on mobile?","acceptedAnswer":{"@type":"Answer","text":"Yes — works on any device."}}]}</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f172a;color:#f1f5f9;min-height:100vh}
+nav{background:#1e293b;border-bottom:1px solid #334155;padding:14px 24px;display:flex;align-items:center;gap:16px}
+nav a{color:#94a3b8;text-decoration:none;font-size:14px}nav a:hover{color:#f1f5f9}
+nav .brand{color:#38bdf8;font-weight:700;font-size:18px}
+.ad-banner{background:#1e293b;border-bottom:1px solid #334155;padding:4px;text-align:center}
+#app{max-width:600px;margin:8px auto;padding:0 16px 40px}
+h1{font-size:26px;font-weight:800;margin:24px 0 4px;text-align:center}
+.subtitle{color:#94a3b8;text-align:center;font-size:14px;margin-bottom:24px}
+.card{background:#1e293b;border:1px solid #334155;border-radius:14px;padding:24px;margin-bottom:16px}
+.mode-tabs{display:flex;gap:0;border:1px solid #334155;border-radius:10px;overflow:hidden;margin-bottom:20px}
+.mode-tab{flex:1;padding:12px;text-align:center;cursor:pointer;font-size:14px;font-weight:600;border:none;background:#0f172a;color:#94a3b8;transition:all .2s}
+.mode-tab.active{background:#38bdf8;color:#0f172a}
+.rate-presets{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.rate-btn{padding:7px 14px;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#94a3b8;cursor:pointer;font-size:13px;font-weight:600;transition:all .2s}
+.rate-btn:hover,.rate-btn.active{background:#8b5cf6;border-color:#8b5cf6;color:#fff}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-size:12px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+.form-group input{width:100%;background:#0f172a;border:1px solid #334155;color:#f1f5f9;padding:12px 16px;border-radius:8px;font-size:18px;font-weight:600}
+.form-group input:focus{outline:none;border-color:#38bdf8}
+.calc-btn{width:100%;padding:14px;background:#38bdf8;color:#0f172a;border:none;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;transition:background .2s}
+.calc-btn:hover{background:#0ea5e9}
+.results{display:none;margin-top:16px}
+.result-row{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.07)}
+.result-row:last-child{border-bottom:none}
+.result-row .rl{font-size:14px;color:#94a3b8}
+.result-row .rv{font-size:20px;font-weight:700;color:#f1f5f9}
+.result-row.highlight .rv{color:#38bdf8;font-size:24px}
+.result-row.highlight .rl{color:#f1f5f9;font-weight:600}
+</style>
+</head>
+<body>
+<nav><span class="brand">⚡ Tabutility</span><a href="https://tabutility.com">← All Tools</a></nav>
+<div class="ad-banner"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+<div id="app">
+  <h1>💷 VAT Calculator</h1>
+  <p class="subtitle">Add or remove VAT from any amount. UK, EU & custom rates.</p>
+
+  <div class="card">
+    <div class="mode-tabs">
+      <button class="mode-tab active" id="addTab" onclick="setMode('add')">➕ Add VAT</button>
+      <button class="mode-tab" id="removeTab" onclick="setMode('remove')">➖ Remove VAT</button>
+    </div>
+
+    <div style="font-size:12px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px">VAT Rate</div>
+    <div class="rate-presets">
+      <button class="rate-btn active" onclick="setRate(20,this)">🇬🇧 UK 20%</button>
+      <button class="rate-btn" onclick="setRate(5,this)">🇬🇧 UK Reduced 5%</button>
+      <button class="rate-btn" onclick="setRate(23,this)">🇮🇪 Ireland 23%</button>
+      <button class="rate-btn" onclick="setRate(19,this)">🇩🇪 Germany 19%</button>
+      <button class="rate-btn" onclick="setRate(21,this)">🇳🇱 Netherlands 21%</button>
+      <button class="rate-btn" onclick="setRate(21,this)">🇪🇸 Spain 21%</button>
+    </div>
+    <div class="form-group">
+      <label>Custom VAT Rate (%)</label>
+      <input type="number" id="vatRate" value="20" min="0" max="100" step="0.5" oninput="clearPresets()"/>
+    </div>
+    <div class="form-group">
+      <label id="amountLabel">Amount (excl. VAT)</label>
+      <input type="number" id="amount" placeholder="0.00" step="0.01" oninput="calculate()"/>
+    </div>
+
+    <div class="results" id="results">
+      <div class="result-row">
+        <span class="rl" id="netLabel">Net (excl. VAT)</span>
+        <span class="rv" id="netVal">£0.00</span>
+      </div>
+      <div class="result-row">
+        <span class="rl">VAT Amount (<span id="rateLabel">20%</span>)</span>
+        <span class="rv" id="vatVal">£0.00</span>
+      </div>
+      <div class="result-row highlight">
+        <span class="rl" id="grossLabel">Gross (incl. VAT)</span>
+        <span class="rv" id="grossVal">£0.00</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="max-width:860px;margin-left:auto;margin-right:auto;margin-top:24px;margin-bottom:8px;padding:0 16px">
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:20px 24px">
+    <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px">Related Tools</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px">
+      <a href="https://gst-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">GST Calculator</div>
+        <div style="font-size:11px;color:#94a3b8;margin-top:2px">International</div>
+      </a>
+      <a href="https://uk-salary-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">UK Salary Calculator</div>
+        <div style="font-size:11px;color:#94a3b8;margin-top:2px">International</div>
+      </a>
+      <a href="https://sales-tax-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Sales Tax Calculator</div>
+        <div style="font-size:11px;color:#94a3b8;margin-top:2px">Finance</div>
+      </a>
+      <a href="https://percentage-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Percentage Calculator</div>
+        <div style="font-size:11px;color:#94a3b8;margin-top:2px">Math</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div style="max-width:860px;margin-left:auto;margin-right:auto;margin-top:8px;margin-bottom:24px;padding:0 16px">
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:20px 24px">
+    <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">Frequently Asked Questions</h2>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">What is the UK VAT rate?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">The standard UK VAT rate is 20%. The reduced rate is 5% (e.g. energy, children's car seats) and zero rate is 0% (e.g. food, children's clothing).</div>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">How do I remove VAT?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Divide the VAT-inclusive amount by 1.2 (for 20% VAT) to get the net amount. Our calculator does this automatically.</div>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Is this free?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Yes — completely free, no sign-up needed.</div>
+    </div>
+    <div style="padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Works on mobile?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Yes — fully responsive and works on any device.</div>
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:8px">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+
+<script>
+let mode = 'add';
+
+function setMode(m) {
+  mode = m;
+  document.getElementById('addTab').classList.toggle('active', m === 'add');
+  document.getElementById('removeTab').classList.toggle('active', m === 'remove');
+  document.getElementById('amountLabel').textContent = m === 'add' ? 'Amount (excl. VAT)' : 'Amount (incl. VAT)';
+  calculate();
+}
+
+function setRate(r, btn) {
+  document.getElementById('vatRate').value = r;
+  document.querySelectorAll('.rate-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  calculate();
+}
+
+function clearPresets() {
+  document.querySelectorAll('.rate-btn').forEach(b => b.classList.remove('active'));
+  calculate();
+}
+
+function fmt(n) { return '£' + n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,','); }
+
+function calculate() {
+  const amount = parseFloat(document.getElementById('amount').value);
+  const rate = parseFloat(document.getElementById('vatRate').value) || 20;
+  if (isNaN(amount) || amount === 0) { document.getElementById('results').style.display = 'none'; return; }
+  const multiplier = 1 + rate / 100;
+  let net, vatAmt, gross;
+  if (mode === 'add') {
+    net = amount; vatAmt = amount * (rate / 100); gross = amount * multiplier;
+  } else {
+    gross = amount; net = amount / multiplier; vatAmt = amount - net;
+  }
+  document.getElementById('netLabel').textContent = 'Net (excl. VAT)';
+  document.getElementById('grossLabel').textContent = 'Gross (incl. VAT)';
+  document.getElementById('rateLabel').textContent = rate + '%';
+  document.getElementById('netVal').textContent = fmt(net);
+  document.getElementById('vatVal').textContent = fmt(vatAmt);
+  document.getElementById('grossVal').textContent = fmt(gross);
+  document.getElementById('results').style.display = 'block';
+}
+</script>
+</body>
 </html>
