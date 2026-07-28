@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vat-calculator.tabutility.com/sitemap.xml
