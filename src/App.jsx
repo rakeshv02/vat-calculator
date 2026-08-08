@@ -43,12 +43,12 @@ export default function App() {
       <div className="no-print" style={{ background: "#fff", borderBottom: "1px solid #e5e7eb", padding: "16px 24px" }}>
         <div style={{ maxWidth: "680px", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <a href="https://tabutility.com" style={{ fontSize: "15px", fontWeight: "700", color: "#6366f1", textDecoration: "none" }}>⌘ Tabutility</a>
-          <button onClick={() => window.print()} style={{ padding: "8px 18px", background: "#0f172a", color: "#fff", border: "none", borderRadius: "8px", fontSize: "13px", fontWeight: "700", cursor: "pointer" }}>🖨️ Print</button>
+          <button onClick={() => window.print()} style={{ padding: "8px 18px", background: "#f8f7f4", color: "#fff", border: "none", borderRadius: "8px", fontSize: "13px", fontWeight: "700", cursor: "pointer" }}>🖨️ Print</button>
         </div>
       </div>
 
       <div style={{ maxWidth: "680px", margin: "0 auto", padding: "32px 16px" }}>
-        <h1 style={{ fontSize: "30px", fontWeight: "900", color: "#0f172a", margin: "0 0 6px" }}>UK VAT Calculator</h1>
+        <h1 style={{ fontSize: "30px", fontWeight: "900", color: "#f8f7f4", margin: "0 0 6px" }}>UK VAT Calculator</h1>
         <p style={{ fontSize: "15px", color: "#6b7280", margin: "0 0 28px" }}>Add or remove VAT instantly. Covers standard (20%), reduced (5%), and zero rates.</p>
 
         {/* Mode toggle */}
@@ -57,7 +57,7 @@ export default function App() {
             { id: "add",    label: "➕ Add VAT",    desc: "I have the net price" },
             { id: "remove", label: "➖ Remove VAT",  desc: "I have the gross price" },
           ].map(m => (
-            <button key={m.id} onClick={() => setMode(m.id)} style={{ flex: 1, padding: "12px", borderRadius: "9px", border: "none", cursor: "pointer", fontWeight: "700", fontSize: "14px", background: mode === m.id ? "#fff" : "transparent", color: mode === m.id ? "#0f172a" : "#6b7280", boxShadow: mode === m.id ? "0 1px 4px rgba(0,0,0,0.1)" : "none", transition: "all 0.15s" }}>
+            <button key={m.id} onClick={() => setMode(m.id)} style={{ flex: 1, padding: "12px", borderRadius: "9px", border: "none", cursor: "pointer", fontWeight: "700", fontSize: "14px", background: mode === m.id ? "#fff" : "transparent", color: mode === m.id ? "#f8f7f4" : "#6b7280", boxShadow: mode === m.id ? "0 1px 4px rgba(0,0,0,0.1)" : "none", transition: "all 0.15s" }}>
               <div>{m.label}</div>
               <div style={{ fontSize: "11px", fontWeight: "500", marginTop: "2px", color: mode === m.id ? "#6b7280" : "#9ca3af" }}>{m.desc}</div>
             </button>
@@ -81,7 +81,7 @@ export default function App() {
                 <button key={v.label} onClick={() => setRateOption(v.rate)}
                   style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "12px 16px", borderRadius: "10px", border: `1.5px solid ${rateOption === v.rate ? "#6366f1" : "#e5e7eb"}`, background: rateOption === v.rate ? "#f5f3ff" : "#fff", cursor: "pointer", textAlign: "left" }}>
                   <div>
-                    <span style={{ fontSize: "14px", fontWeight: "700", color: rateOption === v.rate ? "#6366f1" : "#0f172a" }}>{v.label}</span>
+                    <span style={{ fontSize: "14px", fontWeight: "700", color: rateOption === v.rate ? "#6366f1" : "#f8f7f4" }}>{v.label}</span>
                     <span style={{ fontSize: "12px", color: "#9ca3af", marginLeft: "8px" }}>{v.desc}</span>
                   </div>
                   {rateOption === v.rate && <span style={{ color: "#6366f1", fontWeight: "900" }}>✓</span>}
