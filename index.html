@@ -264,6 +264,94 @@ function calculate() {
   }
 })();
 </script>
+
+<section id="seo-content">
+  <style>
+    #seo-content{max-width:760px;margin:2.5rem auto;padding:0 1.25rem 3rem;font-family:'Segoe UI',system-ui,Arial,sans-serif;color:#334155;line-height:1.7}
+    #seo-content h2{font-size:1.35rem;color:#0f172a;margin:2rem 0 .75rem}
+    #seo-content h3{font-size:1.05rem;color:#0f172a;margin:1.25rem 0 .5rem}
+    #seo-content p,#seo-content li{font-size:.95rem}
+    #seo-content ul{padding-left:1.4rem;margin:.5rem 0}
+    #seo-content .example{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1rem 1.25rem;margin:1rem 0}
+    @media(prefers-color-scheme:dark){#seo-content{color:#cbd5e1}#seo-content h2,#seo-content h3{color:#f1f5f9}#seo-content .example{background:#1e293b;border-color:#334155}}
+  </style>
+  <h2>How to Use the VAT Calculator</h2>
+  <p>The VAT Calculator adds or removes UK Value Added Tax from any amount in one click. To add VAT — finding the VAT-inclusive price from a net price — enter the net amount and select the rate (standard 20%, reduced 5%, or a custom rate) and press Add VAT. To remove VAT — finding the net price from a VAT-inclusive amount — enter the gross amount and press Remove VAT. The tool shows the net price, VAT amount, and gross price side by side, so you can copy whichever figure you need. A custom rate field is available for non-UK jurisdictions or specific VAT categories.</p>
+  <p>Value Added Tax is a consumption tax applied at each stage of the supply chain in the UK and throughout the European Union. In the UK, there are three rates: the standard rate of 20% (applied to most goods and services), the reduced rate of 5% (applied to domestic energy, children's car seats, mobility aids for the elderly, and certain renovations), and the zero rate of 0% (applied to most food and drink, children's clothing, books, and newspapers). Some supplies are VAT-exempt entirely — financial services, insurance, and health and education services — meaning VAT is neither charged nor reclaimable. The distinction between zero-rated and exempt matters for VAT-registered businesses because zero-rated businesses can still reclaim input VAT on their purchases, while exempt businesses cannot.</p>
+  <p>For businesses, understanding VAT is particularly important. UK businesses with taxable turnover above £90,000 (the threshold from April 2024) must register for VAT and charge it on their sales. They can then reclaim the VAT they pay on business purchases (input VAT). Businesses below the threshold can voluntarily register, which may be advantageous if they sell to other VAT-registered businesses (who can reclaim the VAT) but would be a burden when selling to non-VAT-registered consumers. This calculator is equally useful for businesses checking their VAT returns, for consumers checking whether a quoted price includes VAT, and for anyone converting between ex-VAT and inc-VAT amounts.</p>
+
+  <h2>When to Use the VAT Calculator</h2>
+  <ul>
+    <li><strong>Pricing products:</strong> Add VAT to a net price to set the customer-facing price, or work backwards from a target retail price to find the net price.</li>
+    <li><strong>Checking invoices:</strong> Verify that the VAT charged on a supplier invoice matches the correct rate and amount.</li>
+    <li><strong>Expense claims:</strong> Strip the VAT from a total price to find the net cost for a business expense claim.</li>
+    <li><strong>VAT return preparation:</strong> Quickly convert between net and gross amounts when compiling output and input VAT figures.</li>
+    <li><strong>International transactions:</strong> Use the custom rate to apply non-UK VAT rates (e.g., EU country rates ranging from 17–27%).</li>
+  </ul>
+
+  <div class="example"><strong>Adding VAT:</strong> Net price £250. VAT at 20% = £50. Gross (inc. VAT) = <strong>£300</strong>.</div>
+  <div class="example"><strong>Removing VAT:</strong> Gross price £300. VAT = £300 ÷ 1.20 × 0.20 = £50. Net (ex-VAT) = <strong>£250</strong>.</div>
+
+  <h2>Frequently Asked Questions</h2>
+  <h3>How do I calculate VAT at 20%?</h3>
+  <p>To add 20% VAT: multiply the net price by 1.20, or multiply by 0.20 and add to the net price. To remove 20% VAT from a gross price: divide by 1.20. The VAT amount is the gross price minus the result. For example: £360 ÷ 1.20 = £300 net; VAT = £60.</p>
+  <h3>What is the UK VAT registration threshold?</h3>
+  <p>From April 2024, businesses must register for VAT when their taxable turnover exceeds £90,000 in any rolling 12-month period. Once registered, they must charge VAT on taxable sales and can reclaim VAT on business purchases. Voluntary registration is possible below the threshold.</p>
+  <h3>What goods are subject to the 5% reduced rate?</h3>
+  <p>The 5% reduced rate applies to domestic energy (gas and electricity for home use), children's car seats, mobility aids for the elderly, sanitary protection products, and certain energy-saving materials installed in homes. Renovations of some properties also qualify for the reduced rate in specific circumstances.</p>
+  <h3>What is the difference between zero-rated and exempt VAT?</h3>
+  <p>Zero-rated means VAT is charged at 0% — the supply is still technically subject to VAT but at a nil rate. VAT-registered businesses selling zero-rated goods can still reclaim the VAT on their purchases. Exempt means the supply falls outside the VAT system entirely — no VAT is charged, but VAT on related purchases cannot be reclaimed either. This distinction matters significantly for VAT-registered businesses' partial exemption calculations.</p>
+  <h3>Can I use this calculator for EU VAT rates?</h3>
+  <p>Yes. Use the custom rate field to enter any VAT rate. EU member states have standard rates ranging from 17% (Luxembourg) to 27% (Hungary). The same add/remove calculation logic applies regardless of the rate you enter.</p>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I calculate VAT at 20%?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To add 20% VAT: multiply net price by 1.20. To remove 20% VAT from a gross price: divide by 1.20. The VAT amount is gross minus net. Example: £360 ÷ 1.20 = £300 net; VAT = £60."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the UK VAT registration threshold?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "From April 2024, businesses must register for VAT when taxable turnover exceeds £90,000 in any rolling 12-month period. Voluntary registration is possible below the threshold."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What goods are subject to the 5% reduced rate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 5% rate applies to domestic energy, children's car seats, mobility aids for the elderly, sanitary protection products, and certain energy-saving materials installed in homes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between zero-rated and exempt VAT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zero-rated: VAT is charged at 0% and the business can still reclaim input VAT. Exempt: the supply is outside the VAT system — no VAT charged but no input VAT can be reclaimed either."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use this calculator for EU VAT rates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Use the custom rate field for any VAT rate. EU standard rates range from 17% (Luxembourg) to 27% (Hungary). The same add/remove logic applies."
+      }
+    }
+  ]
+}
+</script>
 <footer style="background:#1a1a2e;margin-top:48px;padding:28px 24px;text-align:center;font-family:'Segoe UI',system-ui,Arial,sans-serif;font-size:13px;color:#94a3b8;line-height:1.8">
 <div style="font-weight:700;color:#fff;font-size:15px">⚡ Tabutility</div>
 <div>Free, private, browser-based tools. No sign-up, no tracking.</div>
