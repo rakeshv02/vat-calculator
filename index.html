@@ -66,6 +66,7 @@ h1{font-size:26px;font-weight:800;margin:24px 0 4px;text-align:center}
 nav .brand{color:#fff}
 nav a:hover{color:#818cf8}
 input:focus,select:focus,textarea:focus{border-color:#818cf8!important}
+input[type="number"],select,button{min-height:44px;box-sizing:border-box}
 </style>
 <script type="application/ld+json">
     {
@@ -89,6 +90,7 @@ input:focus,select:focus,textarea:focus{border-color:#818cf8!important}
     }
     </script>
       <meta name="robots" content="noindex, follow">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
 </head>
 <body>
 <nav><span class="brand">⚡ Tabutility</span><a href="https://tabutility.com">← All Tools</a></nav>
@@ -227,8 +229,12 @@ function fmt(n) { return '£' + n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,','
 
 function calculate() {
   const amount = parseFloat(document.getElementById('amount').value);
-  const rate = parseFloat(document.getElementById('vatRate').value) || 20;
-  if (isNaN(amount) || amount === 0) { document.getElementById('results').style.display = 'none'; return; }
+  const rate = Number(document.getElementById('vatRate').value);
+  if (!Number.isFinite(rate) || rate < 0 || rate > 100 || document.getElementById('vatRate').value.trim() === '') {
+    alert('Enter a VAT rate from 0% to 100%.');
+    return;
+  }
+  if (!Number.isFinite(amount)) { document.getElementById('results').style.display = 'none'; return; }
   const multiplier = 1 + rate / 100;
   let net, vatAmt, gross;
   if (mode === 'add') {
@@ -334,7 +340,7 @@ function calculate() {
 </script>
 <footer style="background:#1a1a2e;margin-top:48px;padding:28px 24px;text-align:center;font-family:'Segoe UI',system-ui,Arial,sans-serif;font-size:13px;color:#94a3b8;line-height:1.8">
 <div style="font-weight:700;color:#fff;font-size:15px">⚡ Tabutility</div>
-<div>Free, private, browser-based tools. No sign-up, no tracking.</div>
+<div>Free, browser-based tools. No sign-up. Advertising and analytics are explained in our privacy policy.</div>
 <div style="margin-top:6px"><a href="https://tabutility.com" style="color:#818cf8;font-weight:600;text-decoration:none">All Tools</a> · <a href="https://tabutility.com/blog/" style="color:#94a3b8;text-decoration:none">Blog</a> · <a href="https://tabutility.com/about/" style="color:#94a3b8;text-decoration:none">About</a> · <a href="https://tabutility.com/privacy-policy/" style="color:#94a3b8;text-decoration:none">Privacy</a> · <a href="https://tabutility.com/contact/" style="color:#94a3b8;text-decoration:none">Contact</a></div>
 <div style="margin-top:6px;color:#64748b">© 2026 Tabutility</div>
 </footer>
